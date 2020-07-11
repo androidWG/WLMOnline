@@ -1,0 +1,44 @@
+.chat {
+    height: 100%;
+    width: 100%;
+    margin-left: 8px;
+
+    background-color: #ECF6F9;
+    border: thin solid #707070;
+    border-radius: 8px;
+}
+    .tabs {
+        height: 27px;
+        padding: 2px;
+        overflow: hidden;
+        display: flex;
+        flex-direction: row;
+    }
+        .tabbutton {
+            height: 23px;
+            width: 25%;
+            min-width: 100px;
+
+            margin: 0 3px 0 1px;
+            padding: 0 5px;
+            border: thin solid #B8BDBD;
+            border-radius: 3px;
+
+            background-color: #EFF9F9;
+            display: flex;
+            flex-direction: row;
+        }
+        .tabbutton > .name {
+            margin-top: 4px;
+            text-anchor: middle;
+
+            font-size: 8pt;
+        }
+    
+        .chat > .header {
+            border-top: thin solid #707070;
+            margin: 0;
+            height: 77px;
+            background-image: url("assets/background/chat_header.png");
+            background-size: 100% auto;
+        }

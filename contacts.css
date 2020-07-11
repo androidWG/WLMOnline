@@ -7,7 +7,7 @@
     position: relative;
 }
 
-    .header {
+    .contacts > .header {
         background-image: url("assets/background/msgres_fullheader.png");
         background-repeat: no-repeat;
         background-size: cover;

@@ -2,7 +2,7 @@
 <html>
     <head>
         <title>Windows Live Messenger</title>
-        <link rel="icon" type="image/png" href="assets/icons/90.png" />
+        <link rel="icon" type="image/png" href="assets/icons/logo.png" />
 
         <style>
             * {
@@ -21,8 +21,8 @@
             }
 
             .main {
-                margin: 0;
-                height: 96vh;
+                display: flex;
+                height: 98vh;
                 min-height: 306px;
             }
         </style>
@@ -43,7 +43,7 @@
                         <img id="avatar" src="assets\01CAT.jpg" alt="Profile Picture">
                         <img id="frame"  src="assets\background\avatar_frame.png" alt="Avatar Frame">
                         <div class="profile">
-                            <div id="user">
+                            <div class="aerobutton" id="user">
                                 <h3>AndroidWG</h3>
                                 <p id="status">(Busy)</p>
                             </div>
@@ -95,7 +95,23 @@
                 </div>
             </div>
             <div class="chat">
-                <h1>Chat</h1>
+                <div class="tabs">
+                    <button class="tabbutton">
+                        <img class="status-icon" src="assets/status/invisible.png" alt="status">
+                        <span class="name"><b>Duck</b></span>
+                    </button>
+                    <button class="tabbutton">
+                        <img class="status-icon" src="assets/status/busy.png" alt="status">
+                        <span class="name">Alto</span>
+                    </button>
+                    <button class="tabbutton">
+                        <img class="status-icon" src="assets/status/online.png" alt="status">
+                        <span class="name">jake</span>
+                    </button>
+                </div>
+                <div class="header">
+                    <h1>Header</h1>
+                </div>
             </div>
         </div>
     </body>
