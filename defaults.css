@@ -1,0 +1,13 @@
+.aerobutton {
+    border: 2px solid transparent;
+}
+.aerobutton:hover {
+    border-image: url("assets/button_border.png") 2 round;
+}
+.aerobutton:active {
+    border-image: url("assets/button_border_down.png") 2 round;
+}
+
+.emoticon {
+    margin: 0 3px;
+}

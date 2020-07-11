@@ -3,7 +3,33 @@
     <head>
         <title>Windows Live Messenger</title>
         <link rel="icon" type="image/png" href="assets/icons/90.png" />
-        <link rel="stylesheet" type="text/css" href="style.css">
+
+        <style>
+            * {
+            -webkit-box-sizing: border-box;
+                -moz-box-sizing: border-box;
+                    box-sizing: border-box;
+            }
+
+            body {
+                font-family: "Tahoma", sans-serif;
+                font-size: 8pt;
+            }
+
+            a {
+                color: #0088e4;
+            }
+
+            .main {
+                margin: 0;
+                height: 96vh;
+                min-height: 306px;
+            }
+        </style>
+
+        <link rel="stylesheet" type="text/css" href="defaults.css">
+        <link rel="stylesheet" type="text/css" href="contacts.css">
+        <link rel="stylesheet" type="text/css" href="chat.css">
     </head>
     <body>
         <div class="main">
@@ -63,10 +89,10 @@
                         <p class="contact-text message" style="color: darkgray;">working on writing for ao3!!</p>
                     </button>
                 </div>
-                <footer>
+                <div id="footer">
                     <span style="color: #9bb3d4;">Advertisement</span>
                     <img id="ad" src="assets/ad.png" alt="">
-                </footer>
+                </div>
             </div>
             <div class="chat">
                 <h1>Chat</h1>
