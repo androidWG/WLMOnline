@@ -149,12 +149,22 @@
                 <div class="conversation">
                     <div id="messages">
                         <div id="recieve">
-                            <input type="text">
+                            <textarea class="chattext" id="display" readonly></textarea>
                         </div>
                         <div id="send">
                             <ul id="options">
+                                <button class="aerobutton textoption smallarrowbtn">
+                                    <img src="assets/chat-window/412.png">
+                                    <img class="arrowdown" src="assets/general/small_arrow.svg">
+                                </button>
+                                <button class="aerobutton textoption smallarrowbtn">
+                                    <img src="assets/chat-window/1487.png">
+                                    <img class="arrowdown" src="assets/general/small_arrow.svg">
+                                </button>
+                                <button class="aerobutton textoption"
+                                    style="background: url(assets/chat-window/414.png) no-repeat center; width: 26px;"></button>
                             </ul>
-                            <input type="text">
+                            <textarea class="chattext" id="write" placeholder="Type your message here..."></textarea>
                         </div>
                     </div>
                     <div id="avatars">
@@ -172,7 +182,8 @@
                             <img class="avatar" src="assets/01CAT.jpg" alt="">
                             <img class="frame" src="assets/background/frame_96.png">
                             <div class="avatarnav">
-
+                                <button class="aerobutton avataraction"
+                                    style="background: url(assets/chat-window/1457.png) no-repeat center; float: right;"></button>
                             </div>
                         </div>
                     </div>

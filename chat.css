@@ -109,17 +109,54 @@
     }
         #messages {
             width: 100%;
+            margin-right: 20px;
             display: flex;
             flex-direction: column;
         }
+            .chattext {
+                font-family: "Tahoma", sans-serif;
+                width: 100%;
+                resize: none;
+                border: thin solid #BED6E0;
+            }
+            #recieve {
+                height: 100%;
+                margin-bottom: 15px;
+            }
+                #display {
+                    height: 100%;
+                }
+            #send {
+                height: 150px;
+            }
+                #options {
+                    background-image: url("assets/background/chat_editheader.png");
+                    border: thin solid #bed6e0;
+                    height: 29px;
+                    margin: 0;
+                    padding: 2px;
+                }
+                    .textoption {
+                        height: 24px;
+                        width: auto;
+                        padding: 0 4px;
+                        float: left;
+                    }
+                #write {
+                    height: 100%;
+                    border-top: none;
+                    font-size: 10pt;
+                }
         #avatars {
             height: 100%;
+            position: relative;
         }
             #topavatar {
                 position: relative;
             }
             #bottomavatar {
-                position: relative;
+                position: absolute;
+                bottom: 0;
             }
                 .avatar {
                     margin: 9px;
