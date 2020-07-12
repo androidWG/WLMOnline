@@ -1,4 +1,5 @@
 .aerobutton {
+    background-color: transparent;
     border: 2px solid transparent;
 }
 .aerobutton:hover {
@@ -10,4 +11,11 @@
 
 .emoticon {
     margin: 0 3px;
+}
+
+.expandbutton {
+    display: flex;
+    flex-direction: row;
+    overflow: hidden;
+    align-items: center;
 }

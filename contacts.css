@@ -81,7 +81,7 @@
             font-size: 8pt;
         }
 
-    .nav {
+    #contactsnav {
         background-image: url("assets/background/msgres_navbar.png");
         background-size: 100%;
         overflow: hidden;
