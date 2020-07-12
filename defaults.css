@@ -3,17 +3,17 @@
     border: 2px solid transparent;
 }
 .aerobutton:hover {
-    border-image: url("assets/button_border.png") 2 round;
+    border-image: url("assets/general/button_border.png") 2 round;
 }
 .aerobutton:active {
-    border-image: url("assets/button_border_down.png") 2 round;
+    border-image: url("assets/general/button_border_down.png") 2 round;
 }
 
 .emoticon {
     margin: 0 3px;
 }
 
-.expandbutton {
+.smallarrowbtn {
     display: flex;
     flex-direction: row;
     overflow: hidden;

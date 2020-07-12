@@ -1,6 +1,7 @@
 .chat {
     height: 100%;
     width: 100%;
+    min-width: 320px;
     margin-left: 8px;
 
     background-color: #ECF6F9;
@@ -74,13 +75,21 @@
         }
             .chatnav {
                 height: 33px;
-                width: 50%;
                 padding: 0;
             }
                 .chataction {
                     height: 100%;
                     width: 33px;
+                    margin-left: 5px;
                 }
+                    .chatnav > #left {
+                        width: 100%;
+                        min-width: 230px;
+                    }
+                    .chatnav > #right {
+                        width: 10%;
+                        min-width: 84px;
+                    }
                     .chatnav#left > .chataction {
                         float: left;
                     }
@@ -91,3 +100,59 @@
                     padding: 0 3px;
                     width: 40px;
                 }
+
+    .conversation {
+        height: 80%;
+        display: flex;
+        padding: 10px;
+        padding-right: 0;
+    }
+        #messages {
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+        }
+        #avatars {
+            height: 100%;
+        }
+            #topavatar {
+                position: relative;
+            }
+            #bottomavatar {
+                position: relative;
+            }
+                .avatar {
+                    margin: 9px;
+                    height: 96px;
+                    border-radius: 2px;
+                }
+                .frame {
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                }
+            .avatarnav {
+                height: 18px;
+            }
+                .avataraction {
+                    height: 100%;
+                }
+
+        #expand {
+            margin-left: 18px;
+        }
+            .expandbutton {
+                background: url(assets/chat-window/1450_multi.png) 0 0;
+                background-repeat: no-repeat;
+                border: none;
+
+                padding: 0;
+                width: 12px;
+                height: 31px;
+            }
+            .expandbutton:hover {
+                background: url(assets/chat-window/1450_multi.png) 26px 0;
+            }
+            .expandbutton:active {
+                background: url(assets/chat-window/1450_multi.png) 13px 0;
+            }
