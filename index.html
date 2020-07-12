@@ -101,11 +101,11 @@
             <div class="chat">
                 <div class="tabs">
                     <button class="tabbutton">
-                        <img class="status-icon" src="assets/status/invisible.png" alt="status">
+                        <img class="status-icon" src="assets/status/busy.png" alt="status">
                         <span class="name"><b>Alto</b></span>
                     </button>
                     <button class="tabbutton">
-                        <img class="status-icon" src="assets/status/busy.png" alt="status">
+                        <img class="status-icon" src="assets/status/away.png" alt="status">
                         <span class="name">Duck</span>
                     </button>
                     <button class="tabbutton">
@@ -122,7 +122,7 @@
                         </div>
                     </div>
                     <div id="navbars">
-                        <ul class="iconbar chatnav" id="left">
+                        <ul class="chatnav" id="left">
                             <button class="aerobutton chataction"
                                 style="background:url(assets/chat-window/1441.png) no-repeat center;"></button>
                             <button class="aerobutton chataction"
@@ -136,7 +136,7 @@
                             <button class="aerobutton chataction"
                                 style="background:url(assets/chat-window/326.png) no-repeat center;"></button>
                         </ul>
-                        <ul class="iconbar chatnav" id="right">
+                        <ul class="chatnav" id="right">
                             <button class="aerobutton chataction smallarrowbtn" id="chatnav-expand">
                                 <img src="assets/chat-window/1489.png" style="height: 16px;">
                                 <img class="arrowdown" src="assets/general/small_arrow.svg">
@@ -149,8 +149,13 @@
                 <div class="conversation">
                     <div id="messages">
                         <div id="recieve">
+                            <div class="alerts">
+                                <img src="assets/chat-window/1539.png" alt="">
+                                <p class="alerttext">Alto is Busy and may not reply</p>
+                            </div>
                             <textarea class="chattext" id="display" readonly></textarea>
                         </div>
+                        <div id="handle"></div>
                         <div id="send">
                             <ul id="options">
                                 <button class="aerobutton textoption smallarrowbtn">
@@ -161,10 +166,28 @@
                                     <img src="assets/chat-window/1487.png">
                                     <img class="arrowdown" src="assets/general/small_arrow.svg">
                                 </button>
-                                <button class="aerobutton textoption"
-                                    style="background: url(assets/chat-window/414.png) no-repeat center; width: 26px;"></button>
+                                <button class="aerobutton textoption noarrow"
+                                    style="background: url(assets/chat-window/414.png) no-repeat center;"></button>
+                                <button class="aerobutton textoption noarrow"
+                                    style="background: url(assets/chat-window/992.png) no-repeat center;"></button>
+                                <button class="textoption"
+                                    style="background: url(assets/chat-window/20204.png) no-repeat center; border: none;"></button>
                             </ul>
                             <textarea class="chattext" id="write" placeholder="Type your message here..."></textarea>
+                            <div id="bottomtabs">
+                                <button class="editortab selected">
+                                    <img src="assets/chat-window/963.png">
+                                </button>
+                                <button class="editortab unselected">
+                                    <img src="assets/chat-window/961.png">
+                                </button>
+                                <div>
+                                    <button id="sendbutton">
+                                        Send
+                                    </button>
+                                    <button id="search"></button>
+                                </div>
+                            </div>
                         </div>
                     </div>
                     <div id="avatars">

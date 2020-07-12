@@ -1,8 +1,10 @@
 .chat {
     height: 100%;
     width: 100%;
-    min-width: 320px;
+    min-width: 420px;
     margin-left: 8px;
+    display: flex;
+    flex-direction: column;
 
     background-color: #ECF6F9;
     border: thin solid #707070;
@@ -72,8 +74,11 @@
             display: flex;
             flex-direction: row;
             margin-top: 3px;
+            justify-content: space-between;
         }
             .chatnav {
+                list-style: none;
+                margin: 0;
                 height: 33px;
                 padding: 0;
             }
@@ -89,6 +94,7 @@
                     .chatnav > #right {
                         width: 10%;
                         min-width: 84px;
+                        
                     }
                     .chatnav#left > .chataction {
                         float: left;
@@ -102,10 +108,11 @@
                 }
 
     .conversation {
-        height: 80%;
+        height: 100%;
         display: flex;
         padding: 10px;
         padding-right: 0;
+        padding-bottom: 15px;
     }
         #messages {
             width: 100%;
@@ -120,14 +127,26 @@
                 border: thin solid #BED6E0;
             }
             #recieve {
+                display: flex;
+                flex-direction: column;
                 height: 100%;
-                margin-bottom: 15px;
             }
                 #display {
+                    margin: 0;
                     height: 100%;
                 }
+            
+            #handle {
+                background-image: url("assets/chat-window/30417.png");
+                background-repeat: no-repeat;
+                background-position: center;
+                height: 10px;
+            }
+            
             #send {
-                height: 150px;
+                display: flex;
+                flex-direction: column;
+                height: 200px;
             }
                 #options {
                     background-image: url("assets/background/chat_editheader.png");
@@ -142,11 +161,76 @@
                         padding: 0 4px;
                         float: left;
                     }
+                    .noarrow {
+                        width: 32px;
+                    }
                 #write {
                     height: 100%;
+                    margin: 0;
                     border-top: none;
                     font-size: 10pt;
                 }
+                #bottomtabs {
+                    display: flex;
+                    justify-content: space-between;
+                    height: 24px;
+                    margin: 0;
+                    position: relative;
+                }
+                    .editortab {
+                        width: 26px;
+                        height: 24px;
+                        margin: 0;
+                        padding: 0;
+                        
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+
+                        border: thin solid #bed6e0;
+                        border-top: none;
+                        background-color: white;
+                    }
+                        .selected {
+                            position: absolute;
+                            bottom: 0;
+                            left: 0;
+                            height: 25px;
+
+                            border-top: 2px solid white;
+                        }
+                        .unselected {
+                            margin-left: 25px;
+                            border-left: none;
+                            background: url("assets/chat-window/editortab.png");
+                            image-rendering: pixelated;
+                        }
+                        .unselected:hover {
+                            background: url("assets/chat-window/editortab_down.png");
+                            background-size: 100% auto;
+                            image-rendering: pixelated;
+                        }
+                    #sendbutton {
+                        height: 21px;
+                        padding: 0 18px;
+                        margin: 2px;
+
+                        font-size: 8pt;
+                        color: #001563;
+
+                        background-image: url("assets/general/button_inside.png");
+                        border: 3px solid transparent;
+                        border-image: url("assets/general/button_border_thick.png") 3;
+                    }
+                    #search {
+                        float: right;
+                        width: 23px;
+                        height: 21px;
+                        margin: 2px;
+
+                        background: url("assets/chat-window/653_multi.png") 0 0;
+                        border: none;
+                    }
         #avatars {
             height: 100%;
             position: relative;
