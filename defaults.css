@@ -19,3 +19,7 @@
     overflow: hidden;
     align-items: center;
 }
+.arrowdown {
+    height: 5px;
+    margin-left: 4px;
+}

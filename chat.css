@@ -70,12 +70,12 @@
         #navbars {
             display: flex;
             flex-direction: row;
+            margin-top: 3px;
         }
             .chatnav {
                 height: 33px;
                 width: 50%;
                 padding: 0;
-                margin-top: 8px;
             }
                 .chataction {
                     height: 100%;

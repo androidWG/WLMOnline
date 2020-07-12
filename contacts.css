@@ -51,14 +51,15 @@
     .profile {
         margin: auto;
         margin-left: 14px;
-        margin-top: 5px;
+        margin-top: 3px;
         height: 100%
     }
         #user {
+            padding: 0;
             height: fit-content;
             display: flex;
-            flex-direction: row;
-            text-align: center;
+            text-align: start;
+            align-items: center;
         }
             #user > h3 {
                 font-size: 10pt;
@@ -69,16 +70,26 @@
             #status {
                 margin: 0;
                 font-size: 8pt;
-                color: lightcyan;
+                color: #B9DDE7;
                 margin-left: 8px;
-                margin-top: 2px;
             }
 
         #message {
-            color: lightcyan;
+            padding: 0;
             margin: 0;
-            margin-top: 6px;
+            height: fit-content;
+            display: flex;
+            text-align: start;
+            align-items: center;
+
+            color: #B9DDE7;
+            padding-top: 2px;
+            padding-bottom: 3px;
             font-size: 8pt;
+        }
+        .arrowcontacts {
+            margin-left: 8px;
+            fill: #B9DDE7 !important;
         }
 
     #contactsnav {
