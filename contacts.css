@@ -1,16 +1,16 @@
-.contacts {
+#contacts {
+    background-color: white;
     float: left;
-    width: 274px;
+    width: 30%;
+    min-width: 274px;
     height: 100%;
-    border: thin solid #707070;
-    border-radius: 8px;
     position: relative;
 }
 
-    .contacts > .header {
+    #contacts > .header {
         background-image: url("assets/background/msgres_fullheader.png");
         background-repeat: no-repeat;
-        background-size: cover;
+        background-size:100% 100%;
         height: 95px;
         width: 100%;
     }
@@ -94,7 +94,7 @@
 
     #contactsnav {
         background-image: url("assets/background/msgres_navbar.png");
-        background-size: 100%;
+        background-size:100% 100%;
         overflow: hidden;
         display: flex;
         flex-direction: row;
@@ -207,7 +207,7 @@
         margin: 0;
         padding: 5px 10px;
         background-color: #ECF6F9;
-        border-radius: 8px 0;
+        border-radius: 0 0 8px 8px;
         border-top: thin solid #BED6E0;
     }
         #ad {

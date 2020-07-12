@@ -1,12 +1,20 @@
+.mainwindow {
+    background-color: #ECF6F9;
+    border: thin solid #707070;
+    border-radius: 8px;
+
+    box-shadow: 0 0 5px #00000050;
+}
+
 .aerobutton {
     background-color: transparent;
     border: 2px solid transparent;
 }
 .aerobutton:hover {
-    border-image: url("assets/general/button_border.png") 2 round;
+    border-image: url("assets/general/aerobutton_border.png") 2 round;
 }
 .aerobutton:active {
-    border-image: url("assets/general/button_border_down.png") 2 round;
+    border-image: url("assets/general/aerobutton_border_down.png") 2 round;
 }
 
 .emoticon {

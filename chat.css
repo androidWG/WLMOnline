@@ -1,14 +1,10 @@
-.chat {
+#chat {
     height: 100%;
     width: 100%;
     min-width: 420px;
     margin-left: 8px;
     display: flex;
     flex-direction: column;
-
-    background-color: #ECF6F9;
-    border: thin solid #707070;
-    border-radius: 8px;
 }
     .tabs {
         height: 27px;
@@ -19,10 +15,10 @@
     }
         .tabbutton {
             height: 23px;
-            width: 25%;
+            width: 100%;
             min-width: 100px;
 
-            margin: 0 3px 0 0;
+            margin: 0 2px;
             padding: 0 5px;
             border: thin solid #B8BDBD;
             border-radius: 6px 6px 0 0;
@@ -38,7 +34,7 @@
             font-size: 8pt;
         }
     
-    .chat > .header {
+    #chat > .header {
         border-top: thin solid #707070;
         image-rendering: pixelated;
         background-image: url("assets/background/chat_header.png");
@@ -169,6 +165,7 @@
                     margin: 0;
                     border-top: none;
                     font-size: 10pt;
+                    padding: 4px 8px;
                 }
                 #bottomtabs {
                     display: flex;
@@ -219,9 +216,27 @@
                         color: #001563;
 
                         background-image: url("assets/general/button_inside.png");
+                        background-size: 100% auto;
                         border: 3px solid transparent;
-                        border-image: url("assets/general/button_border_thick.png") 3;
+                        border-image: url("assets/general/button_border.png") 3;
                     }
+                    #sendbutton:hover {
+                        border-image: url("assets/general/button_border_focus.png") 3;
+                    }
+                    #sendbutton:active {
+                        padding: 0 20px;
+                        filter: brightness(93%);
+                        border: thin solid #286088;
+                        border-radius: 3px;
+                        box-shadow: inset 1px 1px 2px #00000077;
+                    }
+                    #sendbutton:disabled {
+                        background-image: none;
+                        background-color: #f0f0f0;
+                        border-image: url("assets/general/button_border_disabled.png") 3;
+                        color: #c9c1c1;
+                    }
+
                     #search {
                         float: right;
                         width: 23px;
@@ -230,6 +245,15 @@
 
                         background: url("assets/chat-window/653_multi.png") 0 0;
                         border: none;
+                    }
+                    #search:hover {
+                        background: url("assets/chat-window/653_multi.png") -23px 0;
+                    }
+                    #search:active {
+                        background: url("assets/chat-window/653_multi.png") -46px 0;
+                    }
+                    #search:disabled {
+                        background: url("assets/chat-window/653_multi.png") -69px 0;
                     }
         #avatars {
             height: 100%;

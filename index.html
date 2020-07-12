@@ -11,7 +11,13 @@
                     box-sizing: border-box;
             }
 
+            html {
+                min-height: 100%;
+                position: relative;
+            }
+
             body {
+                height: 100%;
                 font-family: "Tahoma", sans-serif;
                 font-size: 8pt;
             }
@@ -22,8 +28,16 @@
 
             .main {
                 display: flex;
-                height: 98vh;
+                height: 100vh;
                 min-height: 306px;
+                padding: 10px;
+
+                position:absolute;
+                top:0;
+                bottom:0;
+                left:0;
+                right:0;
+                overflow:hidden;
             }
         </style>
 
@@ -33,7 +47,7 @@
     </head>
     <body>
         <div class="main">
-            <div class="contacts">
+            <div class="mainwindow" id="contacts">
                 <div class="header">
                     <div class="titlebar">
                         <img src="assets/general/live_logo.png" alt="Windows Live Logo">
@@ -98,7 +112,7 @@
                     <img id="ad" src="assets/ad.png" alt="">
                 </div>
             </div>
-            <div class="chat">
+            <div class="mainwindow" id="chat">
                 <div class="tabs">
                     <button class="tabbutton">
                         <img class="status-icon" src="assets/status/busy.png" alt="status">
@@ -182,10 +196,8 @@
                                     <img src="assets/chat-window/961.png">
                                 </button>
                                 <div>
-                                    <button id="sendbutton">
-                                        Send
-                                    </button>
-                                    <button id="search"></button>
+                                    <button id="sendbutton" disabled>Send</button>
+                                    <button id="search" disabled></button>
                                 </div>
                             </div>
                         </div>
