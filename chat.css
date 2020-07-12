@@ -35,10 +35,43 @@
             font-size: 8pt;
         }
     
-        .chat > .header {
-            border-top: thin solid #707070;
-            margin: 0;
-            height: 77px;
-            background-image: url("assets/background/chat_header.png");
-            background-size: 100% auto;
+    .chat > .header {
+        border-top: thin solid #707070;
+        image-rendering: pixelated;
+        background-image: url("assets/background/chat_header.png");
+        background-size: 100% 100%;
+
+        margin: 0;
+        height: 77px;
+        padding: 7px;
+
+        box-shadow: 0px 1px 4px #00000077;
+    }
+        #info {
+            display: flex;
         }
+            #chaticon {
+                height: 16px;
+            }
+            #text {
+                display: flex;
+                flex-direction: column;
+                margin-left: 5px;
+            }
+                #text > #name {
+                    font-weight: bold;
+                    color: #333333;
+                }
+                #text > #message {
+                    color: #6F8A92;
+                    margin: 0;
+                }
+                #nav {
+                    height: 33px;
+                    padding: 0;
+                    margin-top: 8px;
+                }
+                    .chataction {
+                        height: 100%;
+                        width: 33px;
+                    }
