@@ -7,8 +7,9 @@
     flex-direction: column;
 }
     .tabs {
-        height: 27px;
+        min-height: 25px;
         padding: 2px;
+        padding-bottom: 0;
         overflow: hidden;
         display: flex;
         flex-direction: row;
@@ -22,6 +23,7 @@
             padding: 0 5px;
             border: thin solid #B8BDBD;
             border-radius: 6px 6px 0 0;
+            border-bottom: none;
 
             background-color: #EFF9F9;
             display: flex;
@@ -98,10 +100,6 @@
                     .chatnav#right > .chataction {
                         float: right;
                     }
-                #chatnav-expand {
-                    padding: 0 3px;
-                    width: 40px;
-                }
 
     .conversation {
         height: 100%;
@@ -142,6 +140,7 @@
             #send {
                 display: flex;
                 flex-direction: column;
+                min-height: 130px;
                 height: 200px;
             }
                 #options {

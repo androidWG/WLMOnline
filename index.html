@@ -29,7 +29,7 @@
             .main {
                 display: flex;
                 height: 100vh;
-                min-height: 306px;
+                min-height: 440px;
                 padding: 10px;
 
                 position:absolute;
@@ -60,11 +60,11 @@
                             <button class="aerobutton" id="user">
                                 <h3>AndroidWG</h3>
                                 <p id="status">(Busy)</p>
-                                <img class="arrowdown arrowcontacts" src="assets/general/small_arrow.svg">
+                                <img class="arrowdown arrowcontacts" src="assets/general/small_arrow_lightblue.svg">
                             </button>
                             <button class="aerobutton" id="message">
                                 <p style="margin: 0;">stayin alive</p>
-                                <img class="arrowdown arrowcontacts" src="assets/general/small_arrow.svg">
+                                <img class="arrowdown arrowcontacts" src="assets/general/small_arrow_lightblue.svg">
                             </button>
                         </div>
                     </div>
@@ -76,7 +76,10 @@
                         <button class="aerobutton contactaction" style="background:url(assets/contacts-window/1484.png) no-repeat center;"></button>
                     </ul>
                     <ul class="iconbar" id="right">
-                        <button class="aerobutton contactaction" style="background:url(assets/contacts-window/1489.png) no-repeat center;"></button>
+                        <button class="aerobutton contactaction smallarrowbtn" id="moreoptions">
+                            <img src="assets/contacts-window/1489.png" style="height: 16px;">
+                            <img class="arrowdown" src="assets/general/small_arrow.svg">
+                        </button>
                         <button class="aerobutton contactaction" style="background:url(assets/contacts-window/329.png) no-repeat center;"></button>
                     </ul>
                 </div>
@@ -85,7 +88,7 @@
                     <button class="searchbar-btn" style="background:url(assets/contacts-window/1131.png) no-repeat center;"></button>
                     <button class="searchbar-btn" style="background:url(assets/contacts-window/1132.png) no-repeat center;"></button>
                 </div>
-                <div class="contact-list">
+                <ul class="contact-list">
                     <button class="listitem headerlist">
                         <img class="arrow" src="assets/general/arrow_placeholder.png">
                         <b>Online ( 4 )</b>
@@ -106,7 +109,7 @@
                         <span class="contact-text name">jake&nbsp;-&nbsp;</span>
                         <p class="contact-text message" style="color: darkgray;">working on writing for ao3!!</p>
                     </button>
-                </div>
+                </ul>
                 <div id="footer">
                     <span style="color: #9bb3d4;">Advertisement</span>
                     <img id="ad" src="assets/ad.png" alt="">
@@ -151,9 +154,9 @@
                                 style="background:url(assets/chat-window/326.png) no-repeat center;"></button>
                         </ul>
                         <ul class="chatnav" id="right">
-                            <button class="aerobutton chataction smallarrowbtn" id="chatnav-expand">
+                            <button class="aerobutton chataction smallarrowbtn" id="moreoptions">
                                 <img src="assets/chat-window/1489.png" style="height: 16px;">
-                                <img class="arrowdown" src="assets/general/small_arrow.svg">
+                                <img class="arrowdown" src="assets/general/small_arrow_black.svg">
                             </button>
                             <button class="aerobutton chataction"
                                 style="background:url(assets/chat-window/329.png) no-repeat center;"></button>

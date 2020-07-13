@@ -12,6 +12,8 @@
 }
 .aerobutton:hover {
     border-image: url("assets/general/aerobutton_border.png") 2 round;
+    background: url("assets/general/aerobutton_bg.png");
+    background-size: 100% 100%;
 }
 .aerobutton:active {
     border-image: url("assets/general/aerobutton_border_down.png") 2 round;
@@ -30,6 +32,10 @@
 .arrowdown {
     height: 5px;
     margin-left: 4px;
+}
+#moreoptions {
+    padding: 0 3px;
+    width: 40px;
 }
 
 .alerts {
