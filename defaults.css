@@ -12,7 +12,6 @@
 }
 .aerobutton:hover {
     border-image: url("assets/general/aerobutton_border.png") 2 round;
-    background: url("assets/general/aerobutton_bg.png");
     background-size: 100% 100%;
 }
 .aerobutton:active {
@@ -49,3 +48,52 @@
     .alerttext {
     margin: 0; margin-left: 3px; 
     }
+
+::-webkit-scrollbar {
+    width: 17px;
+    cursor: pointer;
+}
+::-webkit-scrollbar-track {
+    background-color: white;
+    border-left: thin solid #E2EAF3;
+}
+::-webkit-scrollbar-thumb {
+    background: url("assets/scrollbar/circle_hover.png") no-repeat center, url("assets/scrollbar/bar.png") no-repeat;
+    background-size: auto, 100% 100%;
+    border: thin solid #A8C1DA;
+}
+::-webkit-scrollbar-thumb:hover {
+    background: url("assets/scrollbar/circle_hover.png") no-repeat center, url("assets/scrollbar/bar_hover.png") no-repeat;
+    background-size: auto, 100% 100%;
+    border: thin solid #4A95C9;
+}
+::-webkit-scrollbar-thumb:active {
+    background: url("assets/scrollbar/circle_down.png") no-repeat center, url("assets/scrollbar/bar_down.png") no-repeat;
+    background-size: auto, 100% 100%;
+    border: thin solid #4388B5;
+}
+
+::-webkit-scrollbar-button:single-button:vertical:decrement {
+    background-image: url("assets/scrollbar/arrow_up.png");
+    background-repeat: no-repeat;
+    background-position: center;
+}
+::-webkit-scrollbar-button:single-button:vertical:increment {
+    background-image: url("assets/scrollbar/arrow_down.png");
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+::-webkit-scrollbar-button:single-button:vertical:decrement:hover {
+    background: url("assets/scrollbar/arrow_up_hover.png") no-repeat center, url("assets/scrollbar/button_hover.png");
+}
+::-webkit-scrollbar-button:single-button:vertical:increment:hover {
+    background: url("assets/scrollbar/arrow_down_hover.png") no-repeat center, url("assets/scrollbar/button_hover.png");
+}
+
+::-webkit-scrollbar-button:single-button:vertical:decrement:active {
+    background: url("assets/scrollbar/arrow_up_hover.png") no-repeat center, url("assets/scrollbar/button_down.png");
+}
+::-webkit-scrollbar-button:single-button:vertical:increment:active {
+    background: url("assets/scrollbar/arrow_down_hover.png") no-repeat center, url("assets/scrollbar/button_down.png");
+}

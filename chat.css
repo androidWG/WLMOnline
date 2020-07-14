@@ -119,6 +119,7 @@
                 width: 100%;
                 resize: none;
                 border: thin solid #BED6E0;
+                padding: 4px 8px;
             }
             #recieve {
                 display: flex;
@@ -164,7 +165,6 @@
                     margin: 0;
                     border-top: none;
                     font-size: 10pt;
-                    padding: 4px 8px;
                 }
                 #bottomtabs {
                     display: flex;

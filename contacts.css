@@ -1,11 +1,14 @@
 #contacts {
     background-color: white;
     float: left;
+
+    display: flex;
+    flex-direction: column;
+
     width: 30%;
     min-width: 250px;
     max-width: 350px;
     height: 100%;
-    position: relative;
 }
 
     #contacts > .header {
@@ -40,8 +43,8 @@
             height: 62px;
             width: auto;
             position: absolute;
-            top: 31px;
-            left: 9px;
+            top: 42px;
+            left: 19px;
         }
         #avatar {
             height: 48px;
@@ -124,9 +127,6 @@
                 #right > .contactaction {
                     float: right;
                 }
-                #contatcs > .arrowdown {
-                    fill: green;
-                }
 
     .search {
         display: flex;
@@ -165,8 +165,10 @@
         }
 
     .contact-list {
+        flex: 1;
         margin: 0;
         padding: 0;
+        max-height: 100%;
         list-style: none;
         overflow: auto;
     }
@@ -213,8 +215,6 @@
                 }
 
     #footer {
-        position: absolute;
-        bottom: 0;
         width: 100%;
         margin: 0;
         padding: 5px 10px;
